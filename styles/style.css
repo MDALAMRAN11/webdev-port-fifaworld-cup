@@ -182,3 +182,49 @@ footer section .about-link ul li a {
     background-color: transparent;
   }
 }
+
+/*tablet view*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .white-btn {
+    border: 1px solid silver;
+  }
+  footer section .about-link ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  main section {
+    padding: 0;
+  }
+  main section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  main section .left-side {
+    background-color: transparent;
+  }
+  main section .right-side {
+    flex: 5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  header .left-side h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  header .left-side p {
+    font-size: 0.5rem;
+  }
+  header section .left-side {
+    margin: 2rem;
+    width: 42vw;
+  }
+  header section .right-side {
+    width: 42vw;
+    height: fit-content;
+  }
+}
