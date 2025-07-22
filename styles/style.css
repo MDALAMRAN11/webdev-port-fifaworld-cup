@@ -4,8 +4,7 @@
   padding: 0;
 }
 header,
-main,
-footer {
+main {
   width: 90vw;
   height: auto;
   margin: 3rem auto;
@@ -41,7 +40,7 @@ header section {
   border-radius: 1.5rem;
 }
 header section .left-side {
-  margin-left: 4rem;
+  margin: auto 2rem;
   flex: 1;
 }
 header .left-side h1 {
@@ -54,6 +53,7 @@ header .left-side p {
 }
 header .right-side img {
   width: 100%;
+  height: 100%;
   display: block;
   flex: 1;
 }
@@ -103,11 +103,6 @@ section .right-side.right-cards .image {
   flex: 1;
 }
 
-/* section .right-side .right-cards > a,
-section .right-side .right-cards > p,
-section .right-side .right-cards > div {
-  padding: 1rem;
-} */
 section .right-side .right-cards .image-content {
   width: 70%;
   margin: 0 auto;
@@ -115,4 +110,75 @@ section .right-side .right-cards .image-content {
 section .right-side .right-cards .image-content .time-content {
   display: flex;
   gap: 1rem;
+}
+
+/*foooter section*/
+footer {
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+footer section {
+  width: 70vw;
+  text-align: center;
+  margin: auto;
+}
+footer section > div {
+  width: 90%;
+  margin: 0 auto;
+}
+footer section h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+footer section hr {
+  width: 50%;
+  margin: 1rem auto;
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+footer section .about-link ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+footer section .about-link ul li {
+  list-style: none;
+}
+footer section .about-link ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.7rem;
+  padding: 1rem auto;
+}
+
+/*mobile view*/
+@media (max-width: 575px) {
+  .white-btn {
+    border: 1px solid silver;
+  }
+  header section,
+  main .first-main,
+  footer section .about-link ul {
+    flex-direction: column;
+  }
+  header section {
+    gap: 3rem;
+  }
+  main .first-main .right-side {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main section {
+    padding: 0;
+    flex-direction: row;
+  }
+  main section .left-side {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
 }
