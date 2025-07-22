@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header,
+main,
+footer {
+  width: 90vw;
+  height: auto;
+  margin: 3rem auto;
+}
+
+/*sharing style*/
+.primary-btn {
+  background-color: #dd0000;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+}
+.white-btn {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+}
+
+/*header section*/
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 1.5rem;
+}
+header section .left-side {
+  margin-left: 4rem;
+  flex: 1;
+}
+header .left-side h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+header .left-side p {
+  margin: 1rem auto;
+}
+header .right-side img {
+  width: 100%;
+  display: block;
+  flex: 1;
+}
+
+/*main Section*/
+main section {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  gap: 2rem;
+}
+main section .left-side {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: fit-content;
+  flex: 1;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+main section .left-side button {
+  width: 100%;
+}
+
+main section .right-side {
+  flex: 5;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+main section .right-side .right-cards {
+  border-radius: 2rem;
+  border: 1px solid silver;
+}
+main section .right-side img {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+section .right-side.right-cards {
+  display: flex;
+  flex-direction: column;
+}
+section .right-side.right-cards .image {
+  flex: 1;
+}
+
+/* section .right-side .right-cards > a,
+section .right-side .right-cards > p,
+section .right-side .right-cards > div {
+  padding: 1rem;
+} */
+section .right-side .right-cards .image-content {
+  width: 70%;
+  margin: 0 auto;
+}
+section .right-side .right-cards .image-content .time-content {
+  display: flex;
+  gap: 1rem;
+}
